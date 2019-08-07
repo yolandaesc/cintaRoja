@@ -4,7 +4,8 @@ const bodyParser=require("body-parser");
 const mongoose=require("mongoose");
 const MONGOURI=require("./config/keys").mongoURI; //CONEXION MONGO
 
-const PORT=3000;//EN MAYUSCULA VARIABLE QUE AFECTA TODO EN EL SERVER
+//const PORT=3000;//EN MAYUSCULA VARIABLE QUE AFECTA TODO EN EL SERVER
+const PORT=process.env.PORT||3000;//EN MAYUSCULA VARIABLE QUE AFECTA TODO EN EL SERVER
 const app=express();
 //IMPORTAR MODULO DE RUTASS
 const {router} =require("./routes/routes"); //LLEVA {} SI EN EL ARCHIVO routers.js SE EXPORTA CON {}
