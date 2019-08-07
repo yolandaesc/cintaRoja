@@ -20,6 +20,7 @@ mongoose.connect(MONGOURI,{useNewUrlParser:true})
 app.use('/',router);
 ///app.use('/users',users);//USUARIOS
 
-app.listen(PORT,()=>{
+app
+.listen(PORT,()=>{
     console.log(PORT);
 });
