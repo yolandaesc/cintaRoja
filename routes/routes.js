@@ -5,6 +5,7 @@ const {Movie}=require("../models/movie");
 
 
 router.get("/", (req,res)=>{
+   // res.status(200).sendFile("./views/index.html");
     res.status(200).send({response:"Corriendo"});
 });
 //Create
